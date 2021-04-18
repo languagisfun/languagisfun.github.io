@@ -8,15 +8,15 @@
 
 </body>
 <script>
-    function getAppId() {
-        const index = location.href.indexOf('app_id=')
-        const rest = location.href.substring(index + 7)
+    function getApp() {
+        const index = location.href.indexOf('app=')
+        const rest = location.href.substring(index + 4)
         const next_index = rest.indexOf('&')
         return next_index >= 0 ? rest.substring(0, next_index) : rest
     }
 
     window.onload = function () {
-        window.location.href = `chrome-extension://${getAppId()}/pages/login.html${location.search}`
+        window.location.href = `${getApp()}/pages/login.html${location.search}`
     }
 </script>
 </html>
