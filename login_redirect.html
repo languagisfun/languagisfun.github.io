@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enjoy Learning Languages Login</title>
+</head>
+<body>
+
+</body>
+<script>
+    function getAppId() {
+        const index = location.href.indexOf('app_id=')
+        const rest = location.href.substring(index + 7)
+        const next_index = rest.indexOf('&')
+        return next_index >= 0 ? rest.substring(0, next_index) : rest
+    }
+
+    window.onload = function () {
+        window.location.href = `chrome-extension://${getAppId()}/pages/login.html${location.search}`
+    }
+</script>
+</html>
