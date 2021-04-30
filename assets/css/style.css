@@ -849,25 +849,26 @@ select:focus {
     .hero-area .left-content .content .subscribe-area .subscribe-form {
       position: relative; }
       .hero-area .left-content .content .subscribe-area .subscribe-form input {
-        width: 100%;
+        width: 180px;
         height: 55px;
         border: 0px;
         background: #fff;
         border-radius: 50px;
-        padding: 0px 190px 0px 30px; }
+        padding: 10px 10px; }
       .hero-area .left-content .content .subscribe-area .subscribe-form .submit-btn {
+        font-weight: bold;
         position: absolute;
         top: 2px;
-        right: 2px;
+        left: 0px;
         height: 51px;
         line-height: 51px;
         padding: 0px 30px;
-        background: -webkit-linear-gradient(40deg, #6e00ff 0, #bb00ff 100%);
-        background: -o-linear-gradient(40deg, #6e00ff 0, #bb00ff 100%);
-        background: linear-gradient(50deg, #6e00ff 0, #bb00ff 100%);
+        background: -webkit-linear-gradient(40deg, #0099ff 0, #bb00ff 100%);
+        background: -o-linear-gradient(40deg, #00a6ff 0, #bb00ff 100%);
+        background: linear-gradient(50deg, #ff0059 0, #ff00b7 100%);
         background-size: 100% 200%;
         color: #fff;
-        border: 0px;
+        border: 10px;
         border-radius: 50px;
         -webkit-transition: all 0.3s ease-in;
         -o-transition: all 0.3s ease-in;
@@ -882,17 +883,11 @@ select:focus {
 /* Hero Area End */
 /* Partner Area Start */
 .partners {
-  padding: 120px 0px 120px; }
-  .partners .section-heading {
-    margin-bottom: 56px; }
-  .partners .partners-slider .slider-item {
-    text-align: center;
-    display: block; }
-    .partners .partners-slider .slider-item img {
-      width: auto;
-      display: inline-block; }
-    .partners .partners-slider .slider-item a {
-      display: inline-block; }
+  text-align: center;
+  padding: 40px 0px 80px; }
+.partners img{
+  opacity: 0.5;
+}
 
 /* Partner Area End */
 /* Our Features Start */
@@ -975,7 +970,7 @@ select:focus {
 /* Important Features Start */
 /* How It Work Start */
 .how-it-work {
-  padding: 116px 0px 130px; }
+  padding: 50px 0px 60px; }
   .how-it-work .section-heading {
     margin-bottom: 56px; }
 
@@ -1066,7 +1061,7 @@ select:focus {
 /* Testimonial End */
 /* Pricing Area Start */
 .pricing {
-  padding: 121px 0px 115px; }
+  padding: 60px 0px 60px; }
   .pricing .section-heading {
     margin-bottom: 55px; }
     .pricing .section-heading .title {
