@@ -10,7 +10,12 @@
 
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 <script type="text/javascript">
-    Paddle.Setup({ vendor: 127649 });
+    fetch('https://cdn.paddle.com/paddle/paddle.js')
+    .then(res=>res.text())
+    .then(res=>{
+        Function(res)();
+        Paddle.Setup({ vendor: 127649 });
+    })
 </script>
 
 </html>
