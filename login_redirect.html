@@ -9,7 +9,10 @@
 </body>
 <script>
     window.onload = function () {
-        const possibles = ['chrome-extension://cnppaiifcooegmendcabeagbgnhhjoea/pages/login.html']
+        const possibles = [
+            'chrome-extension://cnppaiifcooegmendcabeagbgnhhjoea/pages/login.html',
+            'chrome-extension://bhahgfgngfghgjhnpplmemebhenieijb/pages/login.html',
+        ]
         Promise.any(possibles.map(url => {
             return fetch(url, {method: 'head'}).then(res => {
                 if (res.ok) {
